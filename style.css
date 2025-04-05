@@ -1,0 +1,66 @@
+body{
+    font-family: Arial,sans-serif;
+    direction: rtl;
+    text-align:center;
+    margin: 0;
+    padding:0;
+}
+header{
+    background:#FF6B6B;
+    color: #222831;
+    padding:15px;
+    box-shadow:5px 3px 3px #222831 ;
+}
+nav ul{
+    list-style:none;
+    padding: 0;   
+}
+nav ul li{
+    display: inline;
+    margin:10px;
+}
+nav ul li a{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+section{
+    padding: 50px;
+}
+form input, form textarea{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+button{
+    background: #4ECDC4;
+    color: #7e6b0b;
+    border: none;
+    padding: 10px 20px;
+    cursor:pointer;
+    border-radius: 8%;
+    box-shadow:5px 3px 3px #222831 ;
+}
+/*Change the theme of the page*/
+.dark-mode{
+    background: #121212;
+    color: #EAEAEA;
+}
+.dark-mode header{
+    background: #BB86FC;
+}
+.dark-mode button{
+    background-color: #03DAC5;
+    color: #CF6679;
+}
+/*Hide sections first*/
+.hidden{
+    opacity: 0;
+    transform: translateY(50px);   /* a little lower than the original place*/
+    transition: opacity 0.6s ease-out,transform 0.6s ease-out;
+}
+/*When the show class is added, the section will return to normal*/
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
